@@ -10,7 +10,7 @@ import '../../features/payment/ui/payment_screen.dart';
 import '../di/di.dart';
 
 class AppRouter {
-  Route generateRoute(RouteSettings settings) {
+  Route? generateRoute(RouteSettings settings) {
     switch (settings.name) {
       case Routes.loginScreen:
         return MaterialPageRoute(
@@ -35,14 +35,8 @@ class AppRouter {
           ),
         );
 
-      default:
-        return MaterialPageRoute(
-          builder: (_) => Scaffold(
-            body: Center(
-              child: Text('No route defined for ${settings.name}'),
-            ),
-          ),
-        );
+    
     }
+    return null;
   }
 }

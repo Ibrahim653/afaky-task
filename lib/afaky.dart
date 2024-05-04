@@ -17,7 +17,7 @@ class Afaky extends StatelessWidget {
       minTextAdapt: true,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: 'Doc Doc',
+        title: 'afaky',
         theme: ThemeData(
             primaryColor: ColorsManager.mainBlue, fontFamily: 'Cairo'),
         onGenerateRoute: appRouter.generateRoute,
